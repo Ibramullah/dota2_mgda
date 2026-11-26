@@ -29,7 +29,8 @@
         ],
         "hardToFight": [
             "Slark",
-            "Magnus"
+            "Magnus",
+            "Lycan"
         ],
         "goodAllies": []
     },
@@ -50,7 +51,9 @@
     },
     "Beastmaster": {
         "goodAgainst": [],
-        "hardToFight": [],
+        "hardToFight": [
+            "Sven"
+        ],
         "goodAllies": []
     },
     "Bloodseeker": {
@@ -317,14 +320,36 @@
         "goodAllies": []
     },
     "Luna": {
-        "goodAgainst": [],
-        "hardToFight": [],
-        "goodAllies": []
+        "goodAgainst": [
+            "Timbersaw",
+            "Enigma",
+            "Nature's Prophet"
+        ],
+        "hardToFight": [
+            "Anti-Mage",
+            "Morphling",
+            "Dark Seer"
+        ],
+        "goodAllies": [
+            "Shadow Demon"
+        ]
     },
     "Lycan": {
-        "goodAgainst": [],
-        "hardToFight": [],
-        "goodAllies": []
+        "goodAgainst": [
+            "Arc Warden",
+            "Drow Ranger",
+            "Sniper"
+        ],
+        "hardToFight": [
+            "Tidehunter",
+            "Timbersaw",
+            "Mars",
+            "Troll Warlord"
+        ],
+        "goodAllies": [
+            "Lich",
+            "Vengeful Spirit"
+        ]
     },
     "Magnus": {
         "goodAgainst": [],
@@ -373,8 +398,15 @@
         "goodAllies": []
     },
     "Monkey King": {
-        "goodAgainst": [],
-        "hardToFight": [],
+        "goodAgainst": [
+            "Drow Ranger",
+            "Anti-Mage"
+        ],
+        "hardToFight": [
+            "Viper",
+            "Legion Commander",
+            "Timbersaw"
+        ],
         "goodAllies": []
     },
     "Morphling": {
@@ -510,9 +542,17 @@
         "goodAllies": []
     },
     "Sand King": {
-        "goodAgainst": [],
-        "hardToFight": [],
-        "goodAllies": []
+        "goodAgainst": [
+            "Beastmaster"
+        ],
+        "hardToFight": [
+            "Razor",
+            "Slardar",
+            "Bounty Hunter"
+        ],
+        "goodAllies": [
+            "Hoodwink"
+        ]
     },
     "Shadow Demon": {
         "goodAgainst": [],
@@ -545,9 +585,21 @@
         "goodAllies": []
     },
     "Slark": {
-        "goodAgainst": [],
-        "hardToFight": [],
-        "goodAllies": []
+        "goodAgainst": [
+            "Faceless Void",
+            "Batrider"
+        ],
+        "hardToFight": [
+            "Grimstroke",
+            "Outworld Destroyer",
+            "Night Stalker",
+            "Terrorblade"
+        ],
+        "goodAllies": [
+            "Tusk",
+            "Gyrocopter",
+            "Io"
+        ]
     },
     "Snapfire": {
         "goodAgainst": [],
@@ -571,17 +623,31 @@
     },
     "Storm Spirit": {
         "goodAgainst": [],
-        "hardToFight": [],
-        "goodAllies": []
+        "hardToFight": [
+            "Anti-Mage",
+            "Night Stalker"
+        ],
+        "goodAllies": [
+            "Io"
+        ]
     },
     "Sven": {
-        "goodAgainst": [],
-        "hardToFight": [],
+        "goodAgainst": [
+            "Beastmaster",
+            "Enigma"
+        ],
+        "hardToFight": [
+            "Lifestealer",
+            "Razor",
+            "Timbersaw"
+        ],
         "goodAllies": []
     },
     "Techies": {
         "goodAgainst": [],
-        "hardToFight": [],
+        "hardToFight": [
+            "Terrorblade"
+        ],
         "goodAllies": []
     },
     "Templar Assassin": {
@@ -682,7 +748,9 @@
         "goodAllies": []
     },
     "Windranger": {
-        "goodAgainst": [],
+        "goodAgainst": [
+            "Huskar"
+        ],
         "hardToFight": [],
         "goodAllies": []
     },
