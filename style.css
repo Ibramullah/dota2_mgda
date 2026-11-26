@@ -1,0 +1,209 @@
+
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    background: #11151c;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+header p {
+    color: #929baa;
+    margin: 0;
+}
+
+/* Search */
+.search-section {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.search-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #aeb7c5;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+#heroSearch {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #394352;
+    border-radius: 8px;
+    background: #202733;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+#heroSearch:focus {
+    border-color: #c49b45;
+}
+
+/* Search dropdown */
+.search-results {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    background: #202733;
+    border: 1px solid #394352;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.search-results.show {
+    display: block;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background: #303c4c;
+}
+
+.search-result img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.search-result span {
+    font-weight: bold;
+}
+
+/* Selected hero */
+.selected-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.selected-hero img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 2px solid #c49b45;
+    border-radius: 8px;
+}
+
+.selected-hero h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Matchup sections */
+.top-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.matchup-column,
+.allies-section {
+    padding: 18px;
+    background: #1b222d;
+    border: 1px solid #303a49;
+    border-radius: 8px;
+}
+
+.matchup-column h2,
+.allies-section h2 {
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #394352;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* Hero rows */
+.hero-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 48px;
+}
+
+.hero-row img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hero-row span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.allies-section {
+    margin-top: 20px;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    body {
+        padding: 22px 12px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .top-columns {
+        grid-template-columns: 1fr;
+    }
+}
