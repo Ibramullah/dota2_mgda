@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Counter Database</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header>
+            <h1>DOTA 2 COUNTER DATABASE</h1>
+            <p>Find your hero matchups</p>
+        </header>
+
+        <!-- Hero Search -->
+        <section class="search-section">
+            <label for="heroSearch">SEARCH HERO</label>
+
+            <div class="search-wrapper">
+                <input
+                    type="text"
+                    id="heroSearch"
+                    placeholder="Type a hero name..."
+                    autocomplete="off"
+                >
+
+                <div id="searchResults" class="search-results"></div>
+            </div>
+        </section>
+
+        <!-- Selected Hero -->
+        <section id="selectedHero" class="selected-hero hidden">
+            <img id="selectedHeroImage" src="" alt="">
+            <h2 id="selectedHeroName"></h2>
+        </section>
+
+        <!-- Matchup Results -->
+        <section id="matchupSection" class="matchup-section hidden">
+
+            <div class="top-columns">
+
+                <div class="matchup-column">
+                    <h2>GOOD AGAINST</h2>
+                    <div id="goodAgainst" class="hero-list"></div>
+                </div>
+
+                <div class="matchup-column">
+                    <h2>HARD TO FIGHT</h2>
+                    <div id="hardToFight" class="hero-list"></div>
+                </div>
+
+            </div>
+
+            <div class="allies-section">
+                <h2>GOOD ALLIES</h2>
+                <div id="goodAllies" class="hero-list"></div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+</html>
