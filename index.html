@@ -1,11 +1,165 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dota 2 Counter Database</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101318;
+            color: #eeeeee;
+        }
+
+        header {
+            padding: 20px 7%;
+            background: #191e26;
+            border-bottom: 1px solid #303741;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #e6a15a;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .intro h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            color: #9da6b2;
+        }
+
+        #search {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            margin: 25px auto;
+            padding: 14px;
+            background: #202630;
+            border: 1px solid #414b59;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .hero {
+            padding: 25px 15px;
+            text-align: center;
+            background: #1c232d;
+            border: 1px solid #303b49;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .hero:hover {
+            border-color: #e6a15a;
+            transform: translateY(-3px);
+        }
+
+        .hero h3 {
+            margin: 0;
+        }
+
+        .hero p {
+            color: #9da6b2;
+            font-size: 13px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #747e8c;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Dota 2 Counter Database</h1>
-    <p>Welcome to my hero counter database!</p>
+
+    <header>
+        <h2>DOTA DATABASE</h2>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Hero Counter Database</h1>
+            <p>Find heroes, explore matchups, and understand counter mechanics.</p>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search for a hero..."
+            >
+        </section>
+
+        <section class="hero-grid" id="heroGrid">
+
+            <div class="hero">
+                <h3>Axe</h3>
+                <p>Strength</p>
+            </div>
+
+            <div class="hero">
+                <h3>Crystal Maiden</h3>
+                <p>Intelligence</p>
+            </div>
+
+            <div class="hero">
+                <h3>Pudge</h3>
+                <p>Strength</p>
+            </div>
+
+            <div class="hero">
+                <h3>Terrorblade</h3>
+                <p>Agility</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        Dota 2 Counter Database · Personal Project
+    </footer>
+
+    <script>
+        const search = document.getElementById("search");
+        const heroes = document.querySelectorAll(".hero");
+
+        search.addEventListener("input", function () {
+            const query = search.value.toLowerCase();
+
+            heroes.forEach(hero => {
+                const name = hero.innerText.toLowerCase();
+                hero.style.display = name.includes(query) ? "" : "none";
+            });
+        });
+    </script>
+
 </body>
 </html>
