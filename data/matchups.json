@@ -1,14 +1,709 @@
 {
-    "Axe": {
+    "Abaddon": {
+        "goodAgainst": [],
+        "hardToFight": [
+            "Lifestealer"
+        ],
+        "goodAllies": []
+    },
+    "Alchemist": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Ancient Apparition": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Anti-Mage": {
         "goodAgainst": [
-            "Sniper",
-            "Drow Ranger"
+            "Abaddon"
+        ],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Arc Warden": {
+        "goodAgainst": [
+            "Outworld Destroyer"
         ],
         "hardToFight": [
-            "Viper"
+            "Slark",
+            "Magnus"
+        ],
+        "goodAllies": []
+    },
+    "Axe": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Bane": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Batrider": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Beastmaster": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Bloodseeker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Bounty Hunter": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Brewmaster": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Bristleback": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Broodmother": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Centaur Warrunner": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Chaos Knight": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Chen": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Clinkz": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Clockwerk": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Crystal Maiden": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Dark Seer": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Dark Willow": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Dawnbreaker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Dazzle": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Death Prophet": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Disruptor": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": [
+            "Terrorblade",
+            "Kez",
+            "Drow Ranger"
+        ]
+    },
+    "Doom": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Dragon Knight": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Drow Ranger": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Earth Spirit": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Earthshaker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Elder Titan": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Ember Spirit": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Enchantress": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Enigma": {
+        "goodAgainst": [],
+        "hardToFight": [
+            "Gyrocopter",
+            "Doom"
+        ],
+        "goodAllies": []
+    },
+    "Faceless Void": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Grimstroke": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Gyrocopter": {
+        "goodAgainst": [
+            "Enigma",
+            "Riki",
+            "Sand King"
+        ],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Hoodwink": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Huskar": {
+        "goodAgainst": [
+            "Ember Spirit",
+            "Slark",
+            "Slardar",
+            "Monkey King"
+        ],
+        "hardToFight": [
+            "Viper",
+            "Sniper",
+            "Nature's Prophet"
+        ],
+        "goodAllies": []
+    },
+    "Invoker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Io": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Jakiro": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Juggernaut": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Keeper of the Light": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Kez": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Kunkka": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Largo": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Legion Commander": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Leshrac": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Lich": {
+        "goodAgainst": [
+            "Lone Druid"
+        ],
+        "hardToFight": [
+            "Night Stalker"
+        ],
+        "goodAllies": []
+    },
+    "Lifestealer": {
+        "goodAgainst": [
+            "Abaddon"
+        ],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Lina": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Lion": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Lone Druid": {
+        "goodAgainst": [
+            "Ember Spirit",
+            "Outworld Destroyer",
+            "Storm Spirit"
+        ],
+        "hardToFight": [
+            "Mars",
+            "Pangolier"
+        ],
+        "goodAllies": []
+    },
+    "Luna": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Lycan": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Magnus": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Marci": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Mars": {
+        "goodAgainst": [
+            "Lone Druid",
+            "Lycan"
+        ],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Medusa": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Meepo": {
+        "goodAgainst": [
+            "Riki",
+            "Slark",
+            "Outworld Destroyer",
+            "Invoker",
+            "Queen of Pain"
+        ],
+        "hardToFight": [
+            "Earthshaker",
+            "Witch Doctor",
+            "Windranger"
         ],
         "goodAllies": [
+            "Abaddon",
             "Dazzle"
         ]
+    },
+    "Mirana": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Monkey King": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Morphling": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Muerta": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Naga Siren": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Nature's Prophet": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Necrophos": {
+        "goodAgainst": [],
+        "hardToFight": [
+            "Shadow Demon"
+        ],
+        "goodAllies": []
+    },
+    "Night Stalker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Nyx Assassin": {
+        "goodAgainst": [
+            "Abaddon"
+        ],
+        "hardToFight": [
+            "Beastmaster",
+            "Slardar"
+        ],
+        "goodAllies": []
+    },
+    "Ogre Magi": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Omniknight": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Oracle": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Outworld Destroyer": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Pangolier": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Phantom Assassin": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Phantom Lancer": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Phoenix": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Primal Beast": {
+        "goodAgainst": [
+            "Phantom Lancer"
+        ],
+        "hardToFight": [
+            "Shadow Demon",
+            "Clockwerk"
+        ],
+        "goodAllies": []
+    },
+    "Puck": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Pudge": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Pugna": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Queen of Pain": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Razor": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Riki": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Ringmaster": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Rubick": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Sand King": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Shadow Demon": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Shadow Fiend": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Shadow Shaman": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Silencer": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Skywrath Mage": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Slardar": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Slark": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Snapfire": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Sniper": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Spectre": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Spirit Breaker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Storm Spirit": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Sven": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Techies": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Templar Assassin": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Terrorblade": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": [
+            "Disruptor"
+        ]
+    },
+    "Tidehunter": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Timbersaw": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Tinker": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Tiny": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Treant Protector": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Troll Warlord": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Tusk": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Underlord": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Undying": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Ursa": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Vengeful Spirit": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Venomancer": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Viper": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Visage": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Void Spirit": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Warlock": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Weaver": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Windranger": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Winter Wyvern": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Witch Doctor": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Wraith King": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
+    },
+    "Zeus": {
+        "goodAgainst": [],
+        "hardToFight": [],
+        "goodAllies": []
     }
 }
