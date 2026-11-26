@@ -101,7 +101,7 @@ function selectHero(hero) {
     selectedHeroName.textContent = hero.name;
 
     // Generate Dota2ProTracker links
-    const heroSlug = hero.name.replace(/ /g, "_");
+    const heroSlug = encodeURIComponent(hero.name);
 
     document.getElementById("buildLink").href =
         `https://dota2protracker.com/hero/${heroSlug}?section=builds`;
