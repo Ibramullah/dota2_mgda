@@ -1,0 +1,14 @@
+{
+    "Axe": {
+        "goodAgainst": [
+            "Sniper",
+            "Drow Ranger"
+        ],
+        "hardToFight": [
+            "Viper"
+        ],
+        "goodAllies": [
+            "Dazzle"
+        ]
+    }
+}
