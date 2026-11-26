@@ -1,68 +1,48 @@
 
-// Temporary hero database
-// We will replace this with your actual database later.
+// Hero image database
+// We will expand this to the full Dota 2 roster.
 
 const heroes = [
     {
         name: "Axe",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png",
-        goodAgainst: ["Sniper", "Drow Ranger"],
-        hardToFight: ["Viper", "Necrophos"],
-        goodAllies: ["Crystal Maiden", "Dazzle"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png"
     },
     {
         name: "Anti-Mage",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png",
-        goodAgainst: ["Storm Spirit"],
-        hardToFight: ["Axe"],
-        goodAllies: ["Crystal Maiden"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png"
     },
     {
         name: "Crystal Maiden",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png",
-        goodAgainst: ["Anti-Mage"],
-        hardToFight: ["Pudge"],
-        goodAllies: ["Axe", "Dazzle"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png"
     },
     {
         name: "Dazzle",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png",
-        goodAgainst: ["Axe"],
-        hardToFight: ["Silencer"],
-        goodAllies: ["Crystal Maiden"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png"
     },
     {
         name: "Drow Ranger",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png",
-        goodAgainst: ["Crystal Maiden"],
-        hardToFight: ["Axe"],
-        goodAllies: ["Dazzle"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png"
     },
     {
         name: "Necrophos",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png",
-        goodAgainst: ["Axe"],
-        hardToFight: ["Anti-Mage"],
-        goodAllies: ["Dazzle"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png"
     },
     {
         name: "Sniper",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png",
-        goodAgainst: ["Crystal Maiden"],
-        hardToFight: ["Axe"],
-        goodAllies: ["Dazzle"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png"
     },
     {
         name: "Viper",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png",
-        goodAgainst: ["Axe"],
-        hardToFight: ["Sniper"],
-        goodAllies: ["Crystal Maiden"]
+        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png"
     }
 ];
 
 
-// Get HTML elements
+// Matchup database
+let matchups = {};
+
+
+// HTML elements
 const searchInput = document.getElementById("heroSearch");
 const searchResults = document.getElementById("searchResults");
 
@@ -77,7 +57,27 @@ const hardToFight = document.getElementById("hardToFight");
 const goodAllies = document.getElementById("goodAllies");
 
 
-// Search heroes as the user types
+// Load Excel-generated JSON from GitHub
+async function loadDatabase() {
+    try {
+        const response = await fetch("data/matchups.json");
+
+        if (!response.ok) {
+            throw new Error("Could not load matchup database");
+        }
+
+        matchups = await response.json();
+
+        console.log("Matchup database loaded successfully!");
+
+    } catch (error) {
+        console.error(error);
+        alert("Could not load matchup database.");
+    }
+}
+
+
+// Search heroes
 searchInput.addEventListener("input", function () {
     const searchText = searchInput.value.trim().toLowerCase();
 
@@ -125,7 +125,7 @@ searchInput.addEventListener("input", function () {
 });
 
 
-// Select a hero
+// Select hero
 function selectHero(hero) {
     searchInput.value = hero.name;
 
@@ -138,9 +138,18 @@ function selectHero(hero) {
     selectedHero.classList.remove("hidden");
     matchupSection.classList.remove("hidden");
 
-    renderHeroList(goodAgainst, hero.goodAgainst);
-    renderHeroList(hardToFight, hero.hardToFight);
-    renderHeroList(goodAllies, hero.goodAllies);
+    const heroData = matchups[hero.name];
+
+    if (!heroData) {
+        renderHeroList(goodAgainst, []);
+        renderHeroList(hardToFight, []);
+        renderHeroList(goodAllies, []);
+        return;
+    }
+
+    renderHeroList(goodAgainst, heroData.goodAgainst || []);
+    renderHeroList(hardToFight, heroData.hardToFight || []);
+    renderHeroList(goodAllies, heroData.goodAllies || []);
 }
 
 
@@ -169,15 +178,19 @@ function renderHeroList(container, heroNames) {
         container.appendChild(row);
     });
 
-    if (heroNames.length === 0) {
+    if (container.children.length === 0) {
         container.textContent = "No data available";
     }
 }
 
 
-// Close dropdown when clicking outside the search area
+// Close dropdown when clicking outside
 document.addEventListener("click", function (event) {
     if (!event.target.closest(".search-wrapper")) {
         searchResults.classList.remove("show");
     }
 });
+
+
+// Start loading the database
+loadDatabase();
