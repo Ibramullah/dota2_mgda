@@ -100,6 +100,21 @@ function selectHero(hero) {
     selectedHeroImage.alt = hero.name;
     selectedHeroName.textContent = hero.name;
 
+    // Generate Dota2ProTracker links
+    const heroSlug = hero.name.replace(/ /g, "_");
+
+    document.getElementById("buildLink").href =
+        `https://dota2protracker.com/hero/${heroSlug}?section=builds`;
+
+    document.getElementById("matchesLink").href =
+        `https://dota2protracker.com/hero/${heroSlug}?section=matches`;
+
+    document.getElementById("matchupsLink").href =
+        `https://dota2protracker.com/hero/${heroSlug}?section=matchups`;
+
+    document.getElementById("heroLinks").classList.remove("hidden");
+
+    
     selectedHero.classList.remove("hidden");
     matchupSection.classList.remove("hidden");
 
