@@ -207,3 +207,39 @@ header p {
         grid-template-columns: 1fr;
     }
 }
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.hero-links a {
+    padding: 10px 22px;
+    background: #252a35;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #414958;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.hero-links a:hover {
+    background: #3b465a;
+    border-color: #64748b;
+}
+
+@media (max-width: 500px) {
+    .hero-links {
+        flex-wrap: wrap;
+    }
+
+    .hero-links a {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}
