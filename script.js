@@ -1,46 +1,6 @@
 
-// Hero image database
-// We will expand this to the full Dota 2 roster.
-
-const heroes = [
-    {
-        name: "Axe",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png"
-    },
-    {
-        name: "Anti-Mage",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png"
-    },
-    {
-        name: "Crystal Maiden",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png"
-    },
-    {
-        name: "Dazzle",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png"
-    },
-    {
-        name: "Drow Ranger",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png"
-    },
-    {
-        name: "Necrophos",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png"
-    },
-    {
-        name: "Sniper",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png"
-    },
-    {
-        name: "Viper",
-        image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png"
-    }
-];
-
-
-// Matchup database
+let heroes = [];
 let matchups = {};
-
 
 // HTML elements
 const searchInput = document.getElementById("heroSearch");
@@ -57,22 +17,27 @@ const hardToFight = document.getElementById("hardToFight");
 const goodAllies = document.getElementById("goodAllies");
 
 
-// Load Excel-generated JSON from GitHub
+// Load both JSON databases
 async function loadDatabase() {
     try {
-        const response = await fetch("data/matchups.json");
+        const [heroResponse, matchupResponse] = await Promise.all([
+            fetch("data/heroes.json"),
+            fetch("data/matchups.json")
+        ]);
 
-        if (!response.ok) {
-            throw new Error("Could not load matchup database");
+        if (!heroResponse.ok || !matchupResponse.ok) {
+            throw new Error("Could not load database files.");
         }
 
-        matchups = await response.json();
+        heroes = await heroResponse.json();
+        matchups = await matchupResponse.json();
 
-        console.log("Matchup database loaded successfully!");
+        console.log("Hero database loaded:", heroes.length);
+        console.log("Matchup database loaded!");
 
     } catch (error) {
         console.error(error);
-        alert("Could not load matchup database.");
+        alert("Could not load the database. Please refresh the page.");
     }
 }
 
@@ -192,5 +157,5 @@ document.addEventListener("click", function (event) {
 });
 
 
-// Start loading the database
+// Start website
 loadDatabase();
